@@ -30,8 +30,8 @@ namespace BinaryTreeSearch
             if (Root != null)
             {
                 Console.Write(Root.item + " ");
-                PreOrder(Root.leftconnector);
-                PreOrder(Root.rightconnector);
+                PreOrder(Root.leftConnector);
+                PreOrder(Root.rightConnector);
             }
         }
 
@@ -46,11 +46,11 @@ namespace BinaryTreeSearch
             }
             else if (searchItem.CompareTo(node.item) < 0)
             {
-                output = FindNode(node.leftconnector, searchItem);
+                output = FindNode(node.leftConnector, searchItem);
             }
             else if (searchItem.CompareTo(node.item) > 0)
             {
-                output = FindNode(node.rightconnector, searchItem);
+                output = FindNode(node.rightConnector, searchItem);
             }
             return output;
         }
@@ -82,20 +82,20 @@ namespace BinaryTreeSearch
                     if (id < currentNode.item)
                     {
                         //Link it to the left section
-                        currentNode = currentNode.leftconnector;
+                        currentNode = currentNode.leftConnector;
                         if (currentNode == null)
                         {
-                            parentNode.leftconnector = newNode;
+                            parentNode.leftConnector = newNode;
                             return;
                         }
                     }
                     else
                     {
                         //Link it to the right section
-                        currentNode = currentNode.rightconnector;
+                        currentNode = currentNode.rightConnector;
                         if (currentNode == null)
                         {
-                            parentNode.rightconnector = newNode;
+                            parentNode.rightConnector = newNode;
                             return;
                         }
                     }

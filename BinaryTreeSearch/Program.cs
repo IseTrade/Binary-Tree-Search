@@ -29,15 +29,15 @@ namespace BinaryTreeSearch
             bst.InsertNode(19);
 
 
-            Console.WriteLine("Pre-Order Traversal: ");
+            Console.WriteLine("Binary Search Tree sorted from top: ");
             bst.PreOrder(bst.GetRootNode());
+           
 
             Separator();           
 
             Console.WriteLine("Finished!");           
 
             Console.ReadLine();
-            
         }
 
         private static void Separator()
